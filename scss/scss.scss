@@ -7,7 +7,7 @@
 
 header{
     background-color: $bela;
-    height: 4em;
+    height: 3em;
     nav{
         height: 100%;
         padding: 0.5;
@@ -38,12 +38,16 @@ header{
 
 // SECTION
 
+h2{
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
 
 .prvi{
     background-image: url("../slike/hero.jpg");
     background-size: cover;
     height: 100vh;
-    padding-top: 25%;
+    padding-top: 30%;
     text-align: center;
 
         h1{
@@ -53,7 +57,7 @@ header{
             text-align: center;
             color: $bela;
             font-family: $tekst;
-            margin-bottom: 2em;
+            margin-bottom: 3em;
             padding-top: 1.5em;
          
         }
@@ -66,11 +70,13 @@ header{
     }
 }
 
-
-
-.drugi{
+.drugi, .treci{
     padding: 3em 10%;
     width: 100%;
+}
+
+.drugi{
+    
     background-color: $svetloSiva;
     height: 70em;
 
@@ -79,17 +85,14 @@ header{
         text-align: center;
    
     }
-    h2{
-        text-transform: uppercase;
-        margin-bottom: 2em;
-    }
+    
 
     a{
         margin-bottom: 2em;
         div{
             display: inline-block;
             float: left;
-            width: 27%;
+            width: 30%;
             text-align: center;
             margin: 2em 1em;
             margin-bottom: 2em;
@@ -130,4 +133,113 @@ header{
 }
 }
 }
-    
+    .treci{
+    text-align: center;
+    p, h2{
+        font-family: $naslov;
+        margin-bottom: 1em;
+   }
+    p{
+        color: $crvena;
+        margin-bottom: 1em;
+    }
+
+    form{
+        background-color: $svetloSiva;
+        width: 80%;
+        padding: 1em;
+        height: 21em;
+        display: block;
+    margin: 0 auto;
+        border-radius: 10px;
+
+        
+        .kontaktInput{
+            margin: 0.5em;
+            float: left;
+            padding: 0.5em;
+        }
+        
+        select{
+            width: 15%;
+
+        }
+        .kontaktInput[type="text"] {
+			float: right;
+			width: 40%;
+		}
+        .kontaktInput[type="email"] {
+			width: 99%;
+		}
+
+		textarea.kontaktInput {
+            width: 99%;
+            height: 10em;
+        }
+        .kontaktInput[type="submit"] {
+            width: 99%;
+            background-color: $crvena;
+       
+            border-radius: 0 0 6px   6px ;
+            height: 4em;
+           &:hover{
+                background-color: $crna;
+                color: $bela;
+            }
+		}
+    }
+
+
+    }
+
+    .cetvrti{
+        padding: 3em 5%;
+        background: rgba( $crna, 0.9);
+        height: 30em;
+        width: 100%;
+        @include clearfix;
+        .link{
+            width: 60%;
+            float: left;
+          
+            h3{
+                text-align: left;
+                color: $bela;
+                font-family: $naslov;
+                margin-bottom: 1em;
+            }
+            nav{
+                width: 100%;
+                height: 4em;
+                float: left; 
+                 
+                ul{
+                    list-style: none;
+                    li{
+                        float: left;
+                        color: $bela;
+                        margin-right: 1.5em;
+                 
+                    a{
+                        text-decoration: none;
+                        color: $bela;
+                        
+                    }
+                    i{
+                        color: $crvena;
+                        width: 0.5em;
+                        font-size: normal;
+                        margin-right: 0.5em;
+
+                    }
+                }
+            }
+            }
+            .mapa{
+                display: inline-block;
+                float: right;
+                width: 30%;
+            }
+
+        }
+    }
