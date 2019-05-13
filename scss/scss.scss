@@ -1,0 +1,133 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+// HEADER
+
+header{
+    background-color: $bela;
+    height: 4em;
+    nav{
+        height: 100%;
+        padding: 0.5;
+        ul{
+            list-style: none;
+            text-align: center;
+            li{
+                display: inline-block;
+                margin-right: 1em;
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    &:hover{
+                        background-color: $crna;
+                        color: $svetloSiva;
+                    }
+                }
+                img{
+                    height: 2em ;
+                  margin-top: 0.5em;
+                  vertical-align: -0.5em;
+                }
+            }
+        }
+    }
+  
+}
+
+// SECTION
+
+
+.prvi{
+    background-image: url("../slike/hero.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding-top: 25%;
+    text-align: center;
+
+        h1{
+            width: 100%;
+            background-color: rgba( $crna, 0.6);
+            height: 4em;
+            text-align: center;
+            color: $bela;
+            font-family: $tekst;
+            margin-bottom: 2em;
+            padding-top: 1.5em;
+         
+        }
+    .button{
+        background-color: $crvena;
+        padding: 1em;
+        margin: 1em;
+
+
+    }
+}
+
+
+
+.drugi{
+    padding: 3em 10%;
+    width: 100%;
+    background-color: $svetloSiva;
+    height: 70em;
+
+    h2, h3{
+        font-family: $naslov;
+        text-align: center;
+   
+    }
+    h2{
+        text-transform: uppercase;
+        margin-bottom: 2em;
+    }
+
+    a{
+        margin-bottom: 2em;
+        div{
+            display: inline-block;
+            float: left;
+            width: 27%;
+            text-align: center;
+            margin: 2em 1em;
+            margin-bottom: 2em;
+            height: 22em;
+      h3{
+          margin-bottom: 1em;
+      }
+
+        img{
+            width: 25%;
+            margin-bottom: 2em;
+          
+        }
+        .prviP, .drugiP{
+            width: 100%;
+            
+        }
+        .prviP{
+            color: $crvena;
+        }
+        .drugiP{
+            text-align: justify;
+        }
+    }
+    &:hover{
+        div{
+        padding: 1em;
+        border-radius: 10px;
+        background-color: black;
+        
+        h3, .drugiP{
+            color: white;
+        }
+        img{
+            background-color: $crvena;
+        }
+    }
+}
+}
+}
+    
